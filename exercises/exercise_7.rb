@@ -13,3 +13,12 @@ puts "----------"
 
 puts "Please enter a store name:"
 store_name = gets.chomp
+
+@test_store = Store.create(name: store_name)
+
+puts @test_store.errors.full_messages
+
+
+
+
+
